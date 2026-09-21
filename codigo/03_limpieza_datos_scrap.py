@@ -22,8 +22,8 @@ import pandas as pd
 
 CODIGO_MATRICULA = "COMPLETAR"
 
-RUTA_CRUDOS = os.path.join("datos_crudos", f"datos_crudos_{CODIGO_MATRICULA}.csv")
-RUTA_PROCESADOS = os.path.join("datos_procesados", f"datos_procesados_{CODIGO_MATRICULA}.csv")
+RUTA_CRUDOS = os.path.join("datos_crudos", "fromScrapping", f"datos_crudos_{CODIGO_MATRICULA}.csv")
+RUTA_PROCESADOS = os.path.join("datos_procesados", "fromScrapping", f"datos_procesados_{CODIGO_MATRICULA}.csv")
 
 MESES = {
     "Ene": 1, "Feb": 2, "Mar": 3, "Abr": 4, "May": 5, "Jun": 6,

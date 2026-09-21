@@ -42,8 +42,8 @@ RUTA_BASE = os.path.dirname(__file__)
 # /codigo. (Para cumplir al pie de la letra la estructura de la rubrica,
 # numeral 2.5, lo ideal es que sea hermana de /codigo; ajustar aqui y en el
 # extractor si se corrige mas adelante.)
-RUTA_CRUDOS = os.path.join(RUTA_BASE, "datos_crudos")
-RUTA_PROCESADOS = os.path.join(RUTA_BASE, "datos_procesados")
+RUTA_CRUDOS = os.path.join(RUTA_BASE, "datos_crudos", "fromAPI")
+RUTA_PROCESADOS = os.path.join(RUTA_BASE, "datos_procesados", "fromAPI")
 os.makedirs(RUTA_PROCESADOS, exist_ok=True)
 
 RUTA_LOG = os.path.join(RUTA_BASE, "log_ejecucion.txt")

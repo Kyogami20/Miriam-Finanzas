@@ -1,0 +1,6 @@
+2026-09-20 21:01:55,745 | INFO | === INICIO extraccion API BCRP ===
+2026-09-20 21:01:55,745 | INFO | Solicitando: https://estadisticas.bcrp.gob.pe/estadisticas/series/api/CD11032DA/csv/1929/1947/esp
+2026-09-20 21:01:56,061 | INFO | Intento 1 | Codigo HTTP: 200
+2026-09-20 21:01:56,062 | INFO | Filas/periodos descargados (aprox.): 20
+2026-09-20 21:01:56,062 | INFO | Archivo crudo guardado en: /Users/ricardoquispemejia/Projects/Miriam/codigo/../datos_crudos/fromAPI/datos_crudos_2021123456.csv
+2026-09-20 21:01:56,062 | INFO | === FIN extraccion API BCRP ===

@@ -47,26 +47,28 @@ load_dotenv()  # carga variables desde .env (si la fuente lo requiere; BCRPData 
 # tema del temario. Puedes buscar el codigo exacto de tu serie en:
 # https://estadisticas.bcrp.gob.pe/estadisticas/series/
 SERIES_CODES = [
-    "PN06822NM",  # Obligaciones sujetas a encaje - TOSE I - Interbank (miles S/)
+    "CD11032DA",  # Obligaciones sujetas a encaje - TOSE I - Interbank (miles S/)
 ]
 
 FORMATO = "csv"
-FECHA_INICIO = "2010-12"  # <-- CONSTANTE: primer periodo disponible de la serie (Dic-2010)
-FECHA_CORTE = "2026-8"    # <-- CONSTANTE: ultimo periodo disponible de la serie (Ago-2026)
+FECHA_INICIO = "1929"  
+FECHA_CORTE = "1947"    
 IDIOMA = "esp"
 
 CODIGO_MATRICULA = os.getenv("CODIGO_MATRICULA", "00000000")  # se puede fijar tambien como constante directa
 
 BASE_URL = "https://estadisticas.bcrp.gob.pe/estadisticas/series/api"
 
-RUTA_CRUDOS = os.path.join(os.path.dirname(__file__), "datos_crudos")
+RUTA_EXCEL = "completar con la informacion de tu computadora"
+
+RUTA_CRUDOS = os.path.join(os.path.dirname(__file__), ".." , "datos_crudos", "fromAPI")
 os.makedirs(RUTA_CRUDOS, exist_ok=True)
 
 # --------------------------------------------------------------------------
 # 2. LOGGING (queda registrado en log_ejecucion.txt, en la raiz del proyecto)
 # --------------------------------------------------------------------------
 
-RUTA_LOG = os.path.join(os.path.dirname(__file__), "log_ejecucion.txt")
+RUTA_LOG = os.path.join(os.path.dirname(__file__), "..",  "log_ejecucion.txt")
 logging.basicConfig(
     filename=RUTA_LOG,
     level=logging.INFO,

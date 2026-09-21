@@ -53,7 +53,7 @@ HEADERS = {
 
 PAUSA_SEGUNDOS = 1.5  # pausa minima entre solicitudes exigida por la consigna
 
-RUTA_CRUDOS = os.path.join("datos_crudos", f"datos_crudos_{CODIGO_MATRICULA}.csv")
+RUTA_CRUDOS = os.path.join("datos_crudos", "fromScrapping", f"datos_crudos_{CODIGO_MATRICULA}.csv")
 RUTA_LOG = "log_ejecucion.txt"
 
 logging.basicConfig(
